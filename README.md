@@ -52,3 +52,17 @@ npm run prettify
 ```bash
 npm run lint
 ```
+
+## Export as PDF
+
+Run:
+
+```bash
+npm run start
+```
+
+Open another terminal the:
+
+```bash
+npm run export
+```
