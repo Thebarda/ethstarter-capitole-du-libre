@@ -7,6 +7,7 @@ import createTheme from 'spectacle/lib/themes/default'
 import Cover from './slides/cover'
 
 import 'normalize.css'
+import './index.css'
 
 const theme = createTheme(
   {
