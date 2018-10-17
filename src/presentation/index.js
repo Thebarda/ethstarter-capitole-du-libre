@@ -1,16 +1,19 @@
 // Import React
 import React from 'react'
-import { Deck, Heading, Slide, Text, Appear } from 'spectacle'
+import { Deck } from 'spectacle'
 import createTheme from 'spectacle/lib/themes/default'
+
+// Slides
+import Cover from './slides/cover'
 
 import 'normalize.css'
 
 const theme = createTheme(
   {
-    primary: 'white',
-    secondary: '#1F2022',
-    tertiary: '#03A9FC',
-    quaternary: '#CECECE'
+    primary: '#FAFAFA', // white
+    secondary: '#2E2E2E', // very dark grey
+    tertiary: '#58ACFA', // blue
+    quaternary: '#FE9A2E' // orange
   },
   {
     primary: 'Montserrat',
@@ -28,20 +31,7 @@ export default class Presentation extends React.Component {
         contentHeight={900}
         contentWidth={1400}
       >
-        <Slide transition={['slide', 'fade']} bgColor='primary'>
-          <div>
-            <Heading size={1} fit caps lineHeight={1} textColor='secondary'>
-							Spectacle Boilerplate
-            </Heading>
-            <Appear>
-              <div>
-                <Text margin='10px 0 0' textColor='tertiary' size={1} fit bold>
-									open the presentation/index.js file to get started
-                </Text>
-              </div>
-            </Appear>
-          </div>
-        </Slide>
+        {Cover}
       </Deck>
     )
   }
