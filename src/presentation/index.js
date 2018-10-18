@@ -5,6 +5,7 @@ import createTheme from 'spectacle/lib/themes/default'
 
 // Slides
 import Cover from './slides/cover'
+import IntroduceMyself from './slides/introducemyself'
 
 import 'normalize.css'
 import './index.css'
@@ -33,6 +34,7 @@ export default class Presentation extends React.Component {
         contentWidth={1400}
       >
         {Cover}
+        {IntroduceMyself}
       </Deck>
     )
   }
