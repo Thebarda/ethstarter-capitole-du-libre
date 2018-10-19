@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+ react:
+  build:
+   context: .
+  volumes:
+   - .:/srv/ui
+  network_mode: "host"

@@ -5,12 +5,12 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "webpack --config webpack.config.production.js",
-    "serve": "node server-build.js",
     "lint": "eslint --ext .js,.jsx src",
     "prettify": "prettier-standard 'src/**/*.js'",
     "deploy": "npm run clean & npm run build && surge -p .",
     "export": "spectacle-renderer --delay 3000 --o ethstarter-capitole-du-libre-2018.pdf",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "deploy": "node deploy.js"
   },
   "author": "",
   "license": "MIT",
