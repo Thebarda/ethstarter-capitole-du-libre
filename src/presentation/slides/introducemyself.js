@@ -27,14 +27,14 @@ const IntroduceMyself = (
       </Text>
     </Appear>
     <Appear>
-      <Text textColor='primary' textAlign='left' textSize='95%'>
-        DUT Info (Limoges)
-      </Text>
-    </Appear>
-    <Appear>
-      <Text textColor='primary' textAlign='left' textSize='95%'>
-        LP Développement et Qualité du Logiciel (Toulouse)
-      </Text>
+      <div>
+        <Text textColor='primary' textAlign='left' textSize='95%'>
+          Créateur d&apos;Image Docker
+        </Text>
+        <Text textColor='tertiary' textAlign='left' textSize='80%'>
+          thebardapnk/doge.png
+        </Text>
+      </div>
     </Appear>
   </Slide>
 )
