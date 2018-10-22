@@ -8,6 +8,11 @@ import Cover from './slides/cover'
 import IntroduceMyself from './slides/introducemyself'
 import Formation from './slides/formation'
 import Summary from './slides/summary'
+import IntroduceAgile from './slides/introduceagile'
+import IntroduceScrum from './slides/introducescrum'
+import IntroduceScrum2 from './slides/introducescrum2'
+import IntroduceScrumActivities from './slides/introducescrumactivities'
+import IntroduceAgileMore from './slides/introduceagilemore'
 
 import 'normalize.css'
 import './index.css'
@@ -39,6 +44,11 @@ export default class Presentation extends React.Component {
         {IntroduceMyself}
         {Formation}
         {Summary}
+        {IntroduceAgile}
+        {IntroduceScrum}
+        {IntroduceScrum2}
+        {IntroduceScrumActivities}
+        {IntroduceAgileMore}
       </Deck>
     )
   }
