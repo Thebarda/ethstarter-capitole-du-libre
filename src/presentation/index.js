@@ -8,6 +8,14 @@ import Cover from './slides/cover'
 import IntroduceMyself from './slides/introducemyself'
 import Formation from './slides/formation'
 import Summary from './slides/summary'
+import projectContext from './slides/projectcontext'
+import projectCharacters from './slides/projectcharacters'
+import projectCharacters2 from './slides/projectcharacters2'
+import projectGlobal from './slides/projectglobalfunc'
+import projectContributor from './slides/projectcontributorfunc'
+import projectContractor from './slides/projectconractorfunc'
+import projectModerator from './slides/projectmoderatorfunc'
+import titleAgilite from './slides/titleagilite'
 import IntroduceAgile from './slides/introduceagile'
 import IntroduceScrum from './slides/introducescrum'
 import IntroduceScrum2 from './slides/introducescrum2'
@@ -44,6 +52,14 @@ export default class Presentation extends React.Component {
         {IntroduceMyself}
         {Formation}
         {Summary}
+        {projectContext}
+        {projectCharacters}
+        {projectCharacters2}
+        {projectGlobal}
+        {projectContributor}
+        {projectContractor}
+        {projectModerator}
+        {titleAgilite}
         {IntroduceAgile}
         {IntroduceScrum}
         {IntroduceScrum2}
