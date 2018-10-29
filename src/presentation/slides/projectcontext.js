@@ -23,10 +23,10 @@ const projectContext = (
       <Text textColor='primary'>4 Releases</Text>
     </Appear>
     <Appear>
-      <Text textColor='primary'>2 Sprints / Release</Text>
+      <Text textColor='primary'>1 Sprints / Release</Text>
     </Appear>
     <Appear>
-      <Text textColor='primary'>1 Sprint = 1 Semaine</Text>
+      <Text textColor='primary'>1 Sprint = 4 Jours</Text>
     </Appear>
   </Slide>
 )

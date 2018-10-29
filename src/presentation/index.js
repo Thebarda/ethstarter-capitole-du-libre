@@ -21,6 +21,9 @@ import IntroduceScrum from './slides/introducescrum'
 import IntroduceScrum2 from './slides/introducescrum2'
 import IntroduceScrumActivities from './slides/introducescrumactivities'
 import IntroduceAgileMore from './slides/introduceagilemore'
+import AdaptationScrumDailyMeetingExpected from './slides/adaptationscrumdailymeeting'
+import AdaptationScrumDailyMeetingCurrently from './slides/adaptationscrumdailymeetingcurrently'
+import adaptationscrumdailymeetingSolution from './slides/adaptationscrumdailymeetingsolution'
 
 import 'normalize.css'
 import './index.css'
@@ -65,6 +68,9 @@ export default class Presentation extends React.Component {
         {IntroduceScrum2}
         {IntroduceScrumActivities}
         {IntroduceAgileMore}
+        {AdaptationScrumDailyMeetingExpected}
+        {AdaptationScrumDailyMeetingCurrently}
+        {adaptationscrumdailymeetingSolution}
       </Deck>
     )
   }
