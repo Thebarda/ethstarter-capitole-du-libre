@@ -10,9 +10,10 @@ const smartContracts = (
       <Text textColor='primary'>Programmes déployables et exécutable sur une blockchain</Text>
     </Appear>
     <Appear>
-      <div>
-        <Text textColor='primary'>Solidity (.sol)</Text>
-      </div>
+      <Text textColor='primary'>Solidity (.sol)</Text>
+    </Appear>
+    <Appear>
+      <Text textColor='primary'>Langage compilé (vers JSON)</Text>
     </Appear>
     <Appear>
       <Text textColor='primary'>Coût en gaz (1 gaz = 0,0000000225 ether = 0.0000039 €)</Text>
