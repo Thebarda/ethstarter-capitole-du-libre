@@ -32,6 +32,10 @@ import TransactionData from './slides/blockchaindatatransaction'
 import Decentralized from './slides/decentralized'
 import BlockchainConsensus from './slides/blockchainconsensus'
 import BlockCreation from './slides/blockcreation'
+import IntroduceEthereum from './slides/introduceethereum'
+import EthereumUnits from './slides/ethereumunits'
+import SmartContracts from './slides/smartcontracts'
+import CodeSmartContracts from './slides/codesmartcontract'
 
 import 'normalize.css'
 import './index.css'
@@ -87,6 +91,10 @@ export default class Presentation extends React.Component {
         {Decentralized}
         {BlockCreation}
         {BlockchainConsensus}
+        {IntroduceEthereum}
+        {EthereumUnits}
+        {SmartContracts}
+        {CodeSmartContracts}
       </Deck>
     )
   }
