@@ -1,0 +1,2 @@
+npm install ganache-cli -g
+ganache-cli -p 34564

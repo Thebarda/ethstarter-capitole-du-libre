@@ -26,16 +26,6 @@ const IntroduceMyself = (
         Contributeurs sur des projets open-source
       </Text>
     </Appear>
-    <Appear>
-      <div>
-        <Text textColor='primary' textAlign='left' textSize='95%'>
-          Créateur d&apos;Image Docker
-        </Text>
-        <Text textColor='tertiary' textAlign='left' textSize='80%'>
-          thebardapnk/doge.png
-        </Text>
-      </div>
-    </Appear>
   </Slide>
 )
 

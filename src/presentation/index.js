@@ -36,6 +36,16 @@ import IntroduceEthereum from './slides/introduceethereum'
 import EthereumUnits from './slides/ethereumunits'
 import SmartContracts from './slides/smartcontracts'
 import CodeSmartContracts from './slides/codesmartcontract'
+import TechnosUsedBack from './slides/technosusedback'
+import TechnosUsedFront from './slides/technosusedfront'
+import TechnosUsedServer from './slides/technousedserver'
+import TechnosUsedTestCI from './slides/technosusedtestci'
+import DevStructure from './slides/devstructure.js'
+import SetupGanacheCli from './slides/setupganachecli'
+import DeploySmartContract from './slides/deploysmartsontract'
+import CallSmartContract from './slides/callsmartcontractfunction'
+import Improvements from './slides/improvements'
+import Thanks from './slides/thanks'
 
 import AreYouOk from './slides/areyouok'
 
@@ -98,6 +108,16 @@ export default class Presentation extends React.Component {
         {EthereumUnits}
         {SmartContracts}
         {CodeSmartContracts}
+        {TechnosUsedBack}
+        {TechnosUsedFront}
+        {TechnosUsedServer}
+        {TechnosUsedTestCI}
+        {DevStructure}
+        {SetupGanacheCli}
+        {DeploySmartContract}
+        {CallSmartContract}
+        {Improvements}
+        {Thanks}
       </Deck>
     )
   }

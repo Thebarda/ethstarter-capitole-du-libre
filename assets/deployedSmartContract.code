@@ -1,0 +1,123 @@
+var Web3 = require("web3");
+var ethstarterContract = null;
+var ethstarter = null;
+var fs = require("fs");
+
+//minage du contrat. Ceci correspond à l'initialisation du contrat.
+module.exports.minerContrat = function() {
+    var content = fs.readFileSync("./contractAddress.json");
+    var jsonContent = JSON.parse(content);
+
+    var web3 = new Web3(new Web3.providers.HttpProvider("http://vps409515.ovh.net:42669"));
+    ethstarterContract = web3.eth.contract(/* our smart contract ABI */);
+    if(jsonContent.contractAddress==="") {
+        ethstarter = ethstarterContract.new(
+            {
+              from: web3.eth.accounts[0],
+              data: /* compiled smart contract bytecode */,
+              gas: '4700000'
+            }, function (e, contract) {
+                if (typeof contract.address !== 'undefined') {
+                    console.log('Contract mined! address: ' + contract.address + ' transactionHash: ' + contract.transactionHash);
+                    jsonContent.contractAddress = contract.address;
+                    var contentToWrite = JSON.stringify(jsonContent);
+                    fs.writeFileSync("./contractAddress.json", contentToWrite);
+                }
+            });
+    }else{
+        ethstarter = ethstarterContract.at(jsonContent.contractAddress);
+        console.log("Contract already mined at "+jsonContent.contractAddress);
+    }
+};
+//Retourne le nombre de campagnes de financement
+module.exports.getNbCrowfundings = function () {
+    return ethstarter.nbCrowfundings.call();
+};
+module.exports.getBalance = function () {
+    return ethstarter.balance.call();
+};
+//Fonction qui ajoute une campagne de financement au contrat.
+//Ne surtout pas oublier de mettre le coût en gas, sinon ça met une erreur.
+module.exports.addCrowfunding = function(idCrowfund, addrContractor, goal, montantMax){
+    var web3 = new Web3(new Web3.providers.HttpProvider("http://vps409515.ovh.net:42669"));
+    if (montantMax && goal && goal > 0 && montantMax > goal && web3.isAddress(addrContractor) && idCrowfund) {
+        try {
+            return ethstarter.addCrowfunding(idCrowfund, addrContractor, goal, montantMax, {
+                from: addrContractor,
+                gas: 3000000
+            });
+        }catch(err){
+            throw new Error(err);
+        }
+    } else {
+        throw new Error("(montantMax > goal && web3.isAddress(addrContractor) && idCrowfund) : Cette expression ne passe pas");
+    }
+};
+
+module.exports.addContributorToCrowfund = function(idCrowfund, addrContributor, montant){
+    var web3 = new Web3(new Web3.providers.HttpProvider("http://vps409515.ovh.net:42669"));
+    var montantWei = web3.toWei(montant, "ether");
+    montantWei = parseInt(montantWei);
+    if (idCrowfund && web3.isAddress(addrContributor) && montant && montant > 0) {
+        try {
+            return ethstarter.addContributor(idCrowfund, {from: addrContributor, gas: 3000000, value: montantWei});
+        }catch(err){
+            throw new Error(err);
+        }
+    } else {
+        throw new Error("(idCrowfund && web3.isAddress(addrContributor) && montant && montant > 0) : Cette expression ne passe pas");
+    }
+};
+
+module.exports.setEstEnCours = function(idCrowfund, estEnCours){
+    var web3 = new Web3(new Web3.providers.HttpProvider("http://vps409515.ovh.net:42669"));
+    if(idCrowfund && estEnCours !== null && typeof estEnCours !== 'undefined') {
+        try{
+            return ethstarter.setEstEnCours(idCrowfund, estEnCours, {from: web3.eth.accounts[0], gas: 3000000});
+        }catch(err){
+            throw new Error(err);
+        }
+    } else {
+        throw new Error("(idCrowfund && estEnCours) : Cette expression ne passe pas");
+    }
+};
+
+module.exports.sendToContributors = function(id){
+    var web3 = new Web3(new Web3.providers.HttpProvider("http://vps409515.ovh.net:42669"));
+    if(id) {
+        try{
+            return ethstarter.sendToContributors(id, {from: web3.eth.accounts[0], gas: 3000000});
+        }catch(err){
+            throw new Error(err);
+        }
+    } else {
+        throw Error("L'id de la campagne est null ou undefined");
+    }
+};
+
+module.exports.sendToContractor = function(id){
+    var web3 = new Web3(new Web3.providers.HttpProvider("http://vps409515.ovh.net:42669"));
+    if(id) {
+        try {
+            return ethstarter.sendToContractor(id, {from: web3.eth.accounts[0], gas: 3000000});
+        }catch(err){
+            throw new Error(err);
+        }
+    } else {
+        throw Error("L'id de la campagne est null ou undefined");
+    }
+};
+
+module.exports.removeContribution = function(idCampagne, addrContributor) {
+    var web3 = new Web3(new Web3.providers.HttpProvider("http://vps409515.ovh.net:42669"));
+    if (idCampagne && web3.isAddress(addrContributor)) {
+        try{
+            return ethstarter.removeContribution(idCampagne, addrContributor, {from: addrContributor, gas: 3000000});
+        }catch(err){
+            // Bug issue in ganache-cli : Error: VM Exception while processing transaction: revert
+            //Throw new Error(err)
+        }
+    } else {
+      throw Error("(idCampagne && web3.isAddress(addrContributor)) : Cette expression ne passe pas");
+    }
+};
