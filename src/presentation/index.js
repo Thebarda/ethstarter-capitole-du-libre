@@ -37,6 +37,8 @@ import EthereumUnits from './slides/ethereumunits'
 import SmartContracts from './slides/smartcontracts'
 import CodeSmartContracts from './slides/codesmartcontract'
 
+import AreYouOk from './slides/areyouok'
+
 import 'normalize.css'
 import './index.css'
 
@@ -91,6 +93,7 @@ export default class Presentation extends React.Component {
         {Decentralized}
         {BlockCreation}
         {BlockchainConsensus}
+        {AreYouOk}
         {IntroduceEthereum}
         {EthereumUnits}
         {SmartContracts}
