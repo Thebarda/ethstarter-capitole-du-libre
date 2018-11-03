@@ -24,6 +24,14 @@ import IntroduceAgileMore from './slides/introduceagilemore'
 import AdaptationScrumDailyMeetingExpected from './slides/adaptationscrumdailymeeting'
 import AdaptationScrumDailyMeetingCurrently from './slides/adaptationscrumdailymeetingcurrently'
 import adaptationscrumdailymeetingSolution from './slides/adaptationscrumdailymeetingsolution'
+import TitleTech from './slides/titletech'
+import WhatIsBlockchain from './slides/whatisblockchain'
+import BlockchainSchema from './slides/blockchainstorage'
+import BlockData from './slides/blockchaindatablock'
+import TransactionData from './slides/blockchaindatatransaction'
+import Decentralized from './slides/decentralized'
+import BlockchainConsensus from './slides/blockchainconsensus'
+import BlockCreation from './slides/blockcreation'
 
 import 'normalize.css'
 import './index.css'
@@ -71,6 +79,14 @@ export default class Presentation extends React.Component {
         {AdaptationScrumDailyMeetingExpected}
         {AdaptationScrumDailyMeetingCurrently}
         {adaptationscrumdailymeetingSolution}
+        {TitleTech}
+        {WhatIsBlockchain}
+        {BlockchainSchema}
+        {BlockData}
+        {TransactionData}
+        {Decentralized}
+        {BlockCreation}
+        {BlockchainConsensus}
       </Deck>
     )
   }
