@@ -2,6 +2,7 @@ import React from 'react'
 import { Slide, Text, Heading, Appear, Image } from 'spectacle'
 
 import bleemeo from '../../../assets/bleemeo_logo_light.png'
+import reactd3heatmap from '../../../assets/reactd3heatmap.png'
 
 const IntroduceMyself = (
   <Slide bgColor='secondary' transition={['fade', 'spin']}>
@@ -25,6 +26,14 @@ const IntroduceMyself = (
       <Text textColor='primary' textAlign='left' textSize='95%'>
         Contributeurs sur des projets open-source
       </Text>
+    </Appear>
+    <Appear>
+      <div>
+        <Text textColor='primary' textAlign='left' textSize='95%'>
+          react-d3-heatmap
+        </Text>
+        <Image src={reactd3heatmap} width='40rem' style={{ position: 'absolute', marginLeft: '25rem' }} />
+      </div>
     </Appear>
   </Slide>
 )

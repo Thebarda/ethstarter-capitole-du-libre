@@ -15,12 +15,6 @@ const smartContracts = (
     <Appear>
       <Text textColor='primary'>Langage compilé (vers JSON)</Text>
     </Appear>
-    <Appear>
-      <Text textColor='primary'>Coût en gaz (1 gaz = 0,0000000225 ether = 0.0000039 €)</Text>
-    </Appear>
-    <Appear>
-      <Text textColor='primary'>Coût moyen d&apos;une transaction: 21 000 gaz (0.082 €)</Text>
-    </Appear>
   </Slide>
 )
 

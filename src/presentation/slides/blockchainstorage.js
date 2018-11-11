@@ -6,7 +6,7 @@ import blckSchema from '../../../assets/blck-schema.png'
 const blockchainStorage = (
   <Slide bgColor='secondary' textColor='primary' transition={['fade', 'spin']}>
     <Heading textColor='tertiary' size={3}>
-      Une technologie de stockage
+      Une technologie de stockage et de transmission d&apos;informations
     </Heading>
     <Appear>
       <Text textColor='primary'>Stocke les transactions (comme un relevé bancaire)</Text>

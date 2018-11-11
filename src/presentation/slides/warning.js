@@ -1,13 +1,13 @@
 import React from 'react'
 import { Slide, Image } from 'spectacle'
 
-import mindBlow from '../../../assets/mindblow.gif'
+import warning from '../../../assets/warning.gif'
 
-const areyouok = (
+const beCareful = (
   <Slide bgColor='secondary' transition={['fade', 'spin']} textColor='white'>
     <br />
-    <Image src={mindBlow} width='35rem' />
+    <Image src={warning} width='65rem' />
   </Slide>
 )
 
-export default areyouok
+export default beCareful
