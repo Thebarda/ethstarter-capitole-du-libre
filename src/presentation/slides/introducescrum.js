@@ -7,6 +7,12 @@ const introduceScrum = (
       Scrum
     </Heading>
     <Appear>
+      <Text textColor='primary'>Cadre de travail</Text>
+    </Appear>
+    <Appear>
+      <Text textColor='primary'>Incrémental et itératif</Text>
+    </Appear>
+    <Appear>
       <Text textColor='primary'>Trois piliers:</Text>
     </Appear>
     <List textAlign='center'>

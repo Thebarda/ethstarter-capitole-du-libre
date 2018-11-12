@@ -39,6 +39,7 @@ import IntroduceEthereum from './slides/introduceethereum'
 import EthereumUnits from './slides/ethereumunits'
 import SmartContracts from './slides/smartcontracts'
 import CodeSmartContracts from './slides/codesmartcontract'
+import UsefulLinks from './slides/ethereumusefullinks'
 import TechnosUsedBack from './slides/technosusedback'
 import TechnosUsedFront from './slides/technosusedfront'
 import TechnosUsedServer from './slides/technousedserver'
@@ -115,6 +116,7 @@ export default class Presentation extends React.Component {
         {EthereumUnits}
         {SmartContracts}
         {CodeSmartContracts}
+        {UsefulLinks}
         {TechnosUsedBack}
         {TechnosUsedFront}
         {TechnosUsedServer}

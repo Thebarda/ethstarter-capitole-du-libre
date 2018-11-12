@@ -32,7 +32,7 @@ const IntroduceMyself = (
         <Text textColor='primary' textAlign='left' textSize='95%'>
           react-d3-heatmap
         </Text>
-        <Image src={reactd3heatmap} width='40rem' style={{ position: 'absolute', marginLeft: '25rem' }} />
+        <Image src={reactd3heatmap} width='55rem' style={{ position: 'absolute', marginLeft: '25rem' }} />
       </div>
     </Appear>
   </Slide>

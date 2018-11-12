@@ -4,7 +4,7 @@ import { Slide, Heading, Appear, Text, ListItem, List } from 'spectacle'
 const blockchainConsensus = (
   <Slide bgColor='secondary' textColor='primary' textAlign='center'>
     <Heading textColor='tertiary' size={3}>
-      Le principe de consensus (POW)
+      Le principe de consensus
     </Heading>
     <Appear>
       <div>

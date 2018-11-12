@@ -33,7 +33,7 @@ module.exports = {
       test: /\.css$/,
       loader: "style-loader!css-loader"
     }, {
-      test: /\.(png|jpg|gif)$/,
+      test: /\.(png|jpg|jpeg|gif)$/,
       loader: "url-loader?limit=8192"
     }, {
       test: /\.svg$/,

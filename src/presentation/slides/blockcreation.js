@@ -16,7 +16,7 @@ const blockchainConsensus = (
       <Text textColor='primary'>Course à la résolution</Text>
     </Appear>
     <Appear>
-      <Text textColor='primary'>Validation du hash</Text>
+      <Text textColor='primary'>Validation du hash (Proof of work)</Text>
     </Appear>
     <Appear>
       <Text textColor='primary'>Copie du nouveau block vers les noeuds</Text>

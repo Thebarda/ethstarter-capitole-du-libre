@@ -23,7 +23,7 @@ const introduceEthereum = (
       <Text textColor='primary'>Ether</Text>
     </Appear>
     <Appear>
-      <Text textColor='primary'>Fréquence des blocs (moyenne) : 14-15 secondes</Text>
+      <Text textColor='primary'>Fréquence des blocs (moyenne) : 12-15 secondes</Text>
     </Appear>
     <Appear>
       <Text textColor='primary'>Logiciels client: C++, Go, Rust, Python, Javascript, Java, Ruby, Haskell</Text>
