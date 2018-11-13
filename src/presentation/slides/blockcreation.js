@@ -1,7 +1,7 @@
 import React from 'react'
-import { Slide, Heading, Appear, Text, ListItem, List } from 'spectacle'
+import { Slide, Heading, Appear, Text } from 'spectacle'
 
-const blockchainConsensus = (
+const blocCreation = (
   <Slide bgColor='secondary' textColor='primary' transition={['spin', 'fade']} textAlign='center'>
     <Heading textColor='tertiary' size={3}>
       Minage d&apos;un block
@@ -21,7 +21,10 @@ const blockchainConsensus = (
     <Appear>
       <Text textColor='primary'>Copie du nouveau block vers les noeuds</Text>
     </Appear>
+    <Appear>
+      <Text textColor='primary'>Récompense</Text>
+    </Appear>
   </Slide>
 )
 
-export default blockchainConsensus
+export default blocCreation

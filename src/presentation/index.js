@@ -123,9 +123,6 @@ export default class Presentation extends React.Component {
         {TechnosUsedTestCI}
         {DevStructure}
         {SetupGanacheCli}
-        {DeploySmartContract}
-        {CodeRemoveContribution}
-        {CallSmartContract}
         {Improvements}
         {Thanks}
       </Deck>

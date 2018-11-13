@@ -8,7 +8,7 @@ const whatisblockchain = (
     </Heading>
     <Appear>
       <Text textColor='primary' textSize='95%'>
-        Scrum - Claude Aubry
+        Le guide de Scrum - Claude Aubry
       </Text>
     </Appear>
     <Appear>

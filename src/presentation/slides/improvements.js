@@ -15,12 +15,6 @@ const improvements = (
         <span style={{ fontSize: '90%' }}>React/VueJS, ExpressJS/Django Rest Framework</span>
       </Text>
     </Appear>
-    <Appear>
-      <Text textColor='primary'>Meilleure utilisation de Docker</Text>
-    </Appear>
-    <Appear>
-      <Text textColor='primary'>Ajout du déploiement continu</Text>
-    </Appear>
   </Slide>
 )
 

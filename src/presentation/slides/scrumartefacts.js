@@ -10,9 +10,6 @@ const scrumArtefacts = (
       Scrum : Les artéfacts
     </Heading>
     <Appear>
-      <Text textColor='primary'>Sprints et releases</Text>
-    </Appear>
-    <Appear>
       <div>
         <Text textColor='primary'>User stories</Text>
         <Image src={us} style={{ position: 'absolute', marginLeft: '0rem' }} />
@@ -20,6 +17,9 @@ const scrumArtefacts = (
     </Appear>
     <Appear>
       <Text textColor='primary'>Product backlog</Text>
+    </Appear>
+    <Appear>
+      <Text textColor='primary'>Sprints et releases</Text>
     </Appear>
     <Appear>
       <Text textColor='primary'>Sprint backlog</Text>
