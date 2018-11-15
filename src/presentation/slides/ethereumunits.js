@@ -1,5 +1,16 @@
 import React from 'react'
-import { Slide, Heading, Appear, Table, TableHeader, TableHeaderItem, TableRow, TableItem, TableBody } from 'spectacle'
+import {
+  Slide,
+  Heading,
+  Appear,
+  Table,
+  TableHeader,
+  TableHeaderItem,
+  TableRow,
+  TableItem,
+  TableBody,
+  Text
+} from 'spectacle'
 
 const introduceAgile = (
   <Slide bgColor='secondary' textColor='white'>
@@ -45,6 +56,11 @@ const introduceAgile = (
           </TableRow>
         </TableBody>
       </Table>
+    </Appear>
+    <Appear>
+      <Text textColor='primary' textSize='95%'>
+        5000111390000000000 Wei => 5.00011139 Ether
+      </Text>
     </Appear>
   </Slide>
 )
