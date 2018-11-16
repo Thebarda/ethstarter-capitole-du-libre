@@ -4,7 +4,7 @@ import { Slide, Heading, Text, Appear } from 'spectacle'
 const projectModeratorFunc = (
   <Slide bgColor='secondary' textColor='primary' transition={['fade', 'spin']}>
     <Heading textColor='tertiary' size={3}>
-      Fonctionnalités du modérateur
+      Fonctionnalités du Modérateur
     </Heading>
     <Appear>
       <Text textColor='primary'>Valider une campagne</Text>

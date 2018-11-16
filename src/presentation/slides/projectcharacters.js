@@ -12,7 +12,7 @@ const projectCharacters = (
     <Appear>
       <div>
         <List textAlign='center'>
-          <ListItem>L&apos;entrepreneur</ListItem>
+          <ListItem>L&apos;Entrepreneur</ListItem>
           <ListItem>Le Contributeur</ListItem>
           <ListItem>Le Modérateur</ListItem>
         </List>

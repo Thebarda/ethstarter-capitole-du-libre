@@ -4,7 +4,7 @@ import { Slide, Heading, Text, Appear } from 'spectacle'
 const projectContributorFunc = (
   <Slide bgColor='secondary' textColor='primary'>
     <Heading textColor='tertiary' size={3}>
-      Fonctionnalités du contributeur
+      Fonctionnalités du Contributeur
     </Heading>
     <Appear>
       <Text textColor='primary'>Visualiser une campagne</Text>
@@ -28,7 +28,7 @@ const projectContributorFunc = (
       <Text textColor='primary'>Partager une campagne</Text>
     </Appear>
     <Appear>
-      <Text textColor='primary'>Envoyer un mail à un entrepreneur</Text>
+      <Text textColor='primary'>Envoyer un mail à un Entrepreneur</Text>
     </Appear>
     <Appear>
       <Text textColor='primary'>Envoyer un message direct à un Contributeur/Entrepreneur</Text>
