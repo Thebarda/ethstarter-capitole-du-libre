@@ -51,6 +51,7 @@ import CodeRemoveContribution from './slides/coderemovecontribution'
 import CallSmartContract from './slides/callsmartcontractfunction'
 import Improvements from './slides/improvements'
 import Thanks from './slides/thanks'
+import Questions from './slides/questions'
 
 import AreYouOk from './slides/areyouok'
 
@@ -125,6 +126,7 @@ export default class Presentation extends React.Component {
         {SetupGanacheCli}
         {Improvements}
         {Thanks}
+        {Questions}
       </Deck>
     )
   }

@@ -61,8 +61,10 @@ Run:
 npm run start
 ```
 
-Open another terminal the:
+Open another terminal then:
 
 ```bash
 npm run export
 ```
+
+The pdf result is located at ./exported/

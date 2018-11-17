@@ -28,6 +28,11 @@ const IntroduceMyself = (
       </Text>
     </Appear>
     <Appear>
+      <Text textColor='primary' textAlign='left' textSize='95%'>
+        https://github.com/Thebarda/
+      </Text>
+    </Appear>
+    <Appear>
       <div>
         <Text textColor='primary' textAlign='left' textSize='95%'>
           react-d3-heatmap
