@@ -4,7 +4,7 @@ import { Slide, Heading, Appear, BlockQuote, Quote, Cite } from 'spectacle'
 const whatisblockchain = (
   <Slide bgColor='secondary' textColor='primary'>
     <Heading textColor='tertiary' size={3}>
-      La blockchain ? Ké que c&apos;est ?
+      La blockchain ? C&apos; quoi ?
     </Heading>
     <Appear>
       <BlockQuote>
